@@ -1,0 +1,229 @@
+# Group inheritance
+#
+# Any inherited groups prefixed with a g: are global groups
+# and are inherited from the GlobalGroups.yml.
+#
+# Groups without the g: prefix are groups local to this world
+# and are defined in the this groups.yml file.
+#
+# Local group inheritances define your promotion tree when using 'manpromote/mandemote'
+ 
+groups:
+  Member:
+    default: true
+    permissions:
+    - -bukkit.command.kill
+    - essentials.help
+    - essentials.tpa
+    - essentials.tpaccept
+    - essentials.tpdeny
+    - essentials.spawn
+    - essentials.msg
+    - essentials.pay
+    - essentials.sethome
+    - essentials.home
+    - essentials.back
+    - -bukkit.command.tell
+    - -bukkit.command.plugins
+    - -bukkit.command.me
+    - factions.autoclaim
+    - factions.chat
+    - factions.claim
+    - factions.create
+    - factions.deinvite
+    - factions.description
+    - factions.deinvite
+    - factions.disband
+    - factions.help
+    - factions.join
+    - factions.kick
+    - factions.leave
+    - factions.list
+    - factions.map
+    - factions.mod
+    - factions.money.balance
+    - factions.money.deposit
+    - factions.money.withdraw
+    - factions.money.f2f
+    - factions.open
+    - factions.power
+    - factions.sethome
+    - factions.show
+    - factions.tag
+    - factions.title
+    - factions.unclaim
+    - factions.unclaimall
+    - essentials.warp
+    - essentials.warp.list
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&a[Member] &6'
+      build: true
+      suffix: ''
+  Donator:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.nick.color
+    - essentials.fly
+    - essentials.heal
+    inheritance:
+    - member
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&c[Donator] &6'
+      build: true
+      suffix: ''
+  VIP:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.gamemode
+    - essentials.tpo
+    inheritance:
+    - donator
+    - groupmanager_default
+    - bukkit_default
+    - essentials_default
+    - towny_default
+    info:
+      prefix: '&e[Vip] &6'
+      build: true
+      suffix: ''
+  Hero:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - factions.bypass
+    - essentials.time.set
+    - essentials.jail
+    - essentials.ban
+    - essentials.unban
+    - essentials.tempban
+    - essentials.kick
+    inheritance:
+    - vip
+    - groupmanager_default
+    - bukkit_default
+    - essentials_default
+    - towny_default
+    info:
+      prefix: '&b[He&9ro] &6'
+      build: true
+      suffix: ''
+  God:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - hero
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&0[&f&kf&4GOD&f&kg&0] &6'
+      build: true
+      suffix: ''
+  Moderator:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.gamemode
+    - essentials.speed
+    - essentials.jump
+    - essentials.tempban
+    - essentials.kick
+    inheritance:
+    - member
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&9[Mod] &6'
+      build: true
+      suffix: ''
+  HeadMod:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.ban
+    - essentials.mute
+    - essentials.broadcast
+    - essentials.clearinventory
+    inheritance:
+    - moderator
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&1[Head Mod] &6'
+      build: true
+      suffix: ''
+  Admin:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.banip
+    - essentials.unbanip
+    - essentials.more
+    - essentials.enchant
+    - essentials.give
+    - essentials.exp.set
+    inheritance:
+    - headmod
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&4[Admin] &6'
+      build: true
+      suffix: ''
+  HeadAdmin:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    - essentials.tpo
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&9[Head &4Admin] &6'
+      build: true
+      suffix: ''
+  Co-Owner:
+    default: false
+    permissions:
+    - -bukkit.command.kill
+    inheritance:
+    - g:groupmanager_default
+    - g:bukkit_default
+    - g:essentials_default
+    - g:towny_default
+    info:
+      prefix: '&b[&aC&bo&c-&dO&ew&6n&9e&4r&1] &6'
+      build: true
+      suffix: ''
+  Owner:
+    default: false
+    permissions:
+    - '*'
+    - -vanish.*
+    inheritance:
+    - admin
+    info:
+      prefix: '&4&l[Owner]'
+      build: true
+      suffix: ''

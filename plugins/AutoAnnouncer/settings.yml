@@ -1,0 +1,14 @@
+# 
+# AutoAnnouncer Settings by Sharkiller #
+Settings:
+  Interval: 5
+  InSeconds: false
+  Random: false
+  Permission: true
+Announcer:
+  Tag: '&GOLD;[Announcer]'
+  ToGroups: false
+  Groups:
+  - Default
+  Strings:
+  - '&cHope You enjoy Your Stay'

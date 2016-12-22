@@ -1,0 +1,22 @@
+lastAccountName: ReZ_Tech
+timestamps:
+  login: 1482368914002
+  lastteleport: 1479673875621
+  logout: 1479679329500
+ipAddress: 192.168.0.5
+lastlocation:
+  world: world
+  x: -722.5
+  y: 84.30455276133907
+  z: -1051.5
+  yaw: -145.35002
+  pitch: 90.0
+logoutlocation:
+  world: world
+  x: -963.1843565333182
+  y: 24.200000047683716
+  z: -1040.6714962388505
+  yaw: -318.00198
+  pitch: 45.90001
+teleportenabled: false
+afk: true

@@ -1,0 +1,23 @@
+lastAccountName: RezNation
+timestamps:
+  login: 1482369247915
+  logout: 1482369241821
+  lastteleport: 1482370546047
+ipAddress: 207.244.139.81
+logoutlocation:
+  world: world
+  x: -719.7876335150478
+  y: 85.0
+  z: -1043.1391448291743
+  yaw: -83.84982
+  pitch: 40.95
+lastlocation:
+  world: world
+  x: -726.6883348178476
+  y: 85.55890553468969
+  z: -1054.8934881159453
+  yaw: 236.55103
+  pitch: -10.0500555
+nickname: ReZ
+socialspy: true
+godmode: false

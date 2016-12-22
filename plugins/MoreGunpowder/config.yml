@@ -1,0 +1,21 @@
+# enableLooting defines whether Looting enchantment will affect overall drop (each level of Looting is +1 gunpowder)
+# affect defines if the plugin should affect creepers/ghasts drop, setting both to false means the same as disabling whole plugin
+# disableDrop defines if drop of gunpowder from given mob is disabled, regardless of min/max values
+# minDrop is lowest possible amount of dropped gunpowder, maxDrop is the highest one
+config:
+  enableLooting: true
+  creepers:
+    affect: true
+    disableDrop: false
+    kill:
+      minDrop: 5
+      maxDrop: 10
+    explosion:
+      minDrop: 1
+      maxDrop: 3
+  ghasts:
+    affect: true
+    disableDrop: false
+    kill:
+      minDrop: 2
+      maxDrop: 5

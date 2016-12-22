@@ -1,0 +1,38 @@
+# BattleTags+ v2.7.1b Configuration
+# by HappyPikachu -aka- FlyingPikachu, Modified by kwek20
+# 
+# If you experience a problem with this config when starting
+# your server, make sure that you're using spaces and not tabs.
+# Check that all apostrophes are escaped. For example, "can't"
+# becomes "can\'t".
+
+group: false
+nametags: true
+playerlist: false
+SimpleClans:
+  ally: b
+  member: '3'
+  rival: c
+  warring: '4'
+SimpleClans2:
+  ally: b
+  member: '3'
+  rival: c
+  warring: '4'
+Towny:
+  ally: b
+  enemy: c
+xTeam:
+  ally: b
+  enemy: c
+  neutral: f
+AncientRPG:
+  guild: b
+  party: 3
+BattleArena:
+  teammate: 3
+  enemy: c
+Factions:
+  world: true
+  world_nether: true
+  world_the_end: true

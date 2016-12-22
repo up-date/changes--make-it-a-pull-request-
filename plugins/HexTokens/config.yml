@@ -1,0 +1,114 @@
+items:
+  1:
+    Material: "BEACON"
+    DataValue: 1
+    Quantity: 1
+    Cost: 1000
+  2:
+    Material: "MONSTER_EGG"
+    DataValue: 50
+    Quantity: 1
+    Cost: 500
+DropChances:
+  BLAZE: 50
+  CREEPER: 75
+  ENDERMAN: 50
+  PIG_ZOMBIE: 100
+  SKELETON: 100
+  SPIDER: 100
+  WITCH: 20
+  WITHER: 4
+  ZOMBIE: 100
+EnchantmentCosts:
+  WATER_WORKER:
+    1: 1
+  THORNS:
+    1: 4
+    2: 9
+    3: 16
+  SILK_TOUCH:
+    1: 16
+  PROTECTION_PROJECTILE:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+  PROTECTION_FIRE:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+  PROTECTION_FALL:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+  PROTECTION_EXPLOSIONS:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+  PROTECTION_ENVIRONMENTAL:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+  OXYGEN:
+    1: 4
+    2: 9
+    3: 16
+  LOOT_BONUS_MOBS:
+    1: 16
+    2: 25
+    3: 36
+  LOOT_BONUS_BLOCKS:
+    1: 16
+    2: 25
+    3: 36
+  KNOCKBACK:
+    1: 4
+    2: 9
+  FIRE_ASPECT:
+    1: 16
+    2: 25
+  DURABILITY:
+    1: 9
+    2: 16
+    3: 25
+  DIG_SPEED:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+    5: 36
+  DAMAGE_UNDEAD:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+    5: 36
+  DAMAGE_ARTHROPODS:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+    5: 36
+  DAMAGE_ALL:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+    5: 36
+  ARROW_KNOCKBACK:
+    1: 4
+    2: 9
+  ARROW_INFINITE:
+    1: 4
+  ARROW_FIRE:
+    1: 4
+  ARROW_DAMAGE:
+    1: 4
+    2: 9
+    3: 16
+    4: 25
+    5: 36
